@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>江南钱庄-中国人自己的财富管理平台</title>
+    <meta name="keywords" content="江南钱庄，江南钱庄理财，中国人自己的理财机构，理财机构，中国人自己的财富管理平台，江南钱庄投资，中国人自己的财富管理平台">
+    <meta name="description" content="江南钱庄，创设于光绪二年（1876），距今一百四十余年，是属于中国人自己的财富管理平台。现江南钱庄系上海雨海信息科技有限公司旗下的互联网金融平台，注册资金5000万，专注为用户提供多元化的投资选择和优质的投资服务，致力于为投资人提供更安全、更低风险、更稳健的理财产品。" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maxmim-scale=1.1,user-scalable=no">
+    <meta name="apple-mobile-web-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="inx.ico" />
+    <script>
+        !function(win) {
+            function resize() {
+                var domWidth = domEle.getBoundingClientRect().width;
+                if(domWidth / v > 540){
+                    domWidth = 540 * v;
+                }
+                win.rem = domWidth / 16;
+                domEle.style.fontSize = win.rem + "px";
+            }
+            var v, initial_scale, timeCode, dom = win.document, domEle = dom.documentElement, viewport = dom.querySelector('meta[name="viewport"]'), flexible = dom.querySelector('meta[name="flexible"]');
+            if (viewport) {
+                //viewport：<meta name="viewport"content="initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5,user-scalable=no,minimal-ui"/>
+                var o = viewport.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+                if(o){
+                    initial_scale = parseFloat(o[2]);
+                    v = parseInt(1 / initial_scale);
+                }
+            } else {
+                if (flexible) {
+                    var o = flexible.getAttribute("content").match(/initial\-dpr=(["']?)([\d\.]+)\1?/);
+                    if(o){
+                        v = parseFloat(o[2]);
+                        initial_scale = parseFloat((1 / v).toFixed(2))
+                    }
+                }
+            }
+            if (!v && !initial_scale) {
+                var n = (win.navigator.appVersion.match(/android/gi), win.navigator.appVersion.match(/iphone/gi));
+                v = win.devicePixelRatio;
+                v = n ? v >= 3 ? 3 : v >= 2 ? 2 : 1 : 1, initial_scale = 1 / v
+            }
+            //没有viewport标签的情况下
+            if (domEle.setAttribute("data-dpr", v), !viewport) {
+                if (viewport = dom.createElement("meta"), viewport.setAttribute("name", "viewport"), viewport.setAttribute("content", "initial-scale=" + initial_scale + ", maximum-scale=" + initial_scale + ", minimum-scale=" + initial_scale + ", user-scalable=no"), domEle.firstElementChild) {
+                    domEle.firstElementChild.appendChild(viewport)
+                } else {
+                    var m = dom.createElement("div");
+                    m.appendChild(viewport), dom.write(m.innerHTML)
+                }
+            }
+            win.dpr = v;
+            win.addEventListener("resize", function() {
+                clearTimeout(timeCode), timeCode = setTimeout(resize, 300)
+            }, false);
+            win.addEventListener("pageshow", function(b) {
+                b.persisted && (clearTimeout(timeCode), timeCode = setTimeout(resize, 300))
+            }, false);
+            /* 个人觉得没必要完成后就把body的字体设置为12
+             "complete" === dom.readyState ? dom.body.style.fontSize = 12 * v + "px" : dom.addEventListener("DOMContentLoaded", function() {
+             //dom.body.style.fontSize = 12 * v + "px"
+             }, false);
+             */
+            resize();
+        }(window);
+    </script>
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="css/index1.css"/>
+</head>
+<body>
+<header id="header">
+    <div class="menu">
+        <div class="logo left">
+            <a href="#page1">
+                <b></b>
+                <span>江南钱庄</span>
+            </a>
+        </div>
+        <ul class="menu-header" id="menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+            <li data-menuanchor="page2"><a href="#page2">公司介绍</a></li>
+            <li data-menuanchor="page3"><a href="#page3">资金托管</a></li>
+            <li data-menuanchor="page4"><a href="#page4">旗下产品</a></li>
+            <li data-menuanchor="page5"><a href="#page5">安全保障</a></li>
+            <li data-menuanchor="page6"><a href="#page6">合作伙伴</a></li>
+            <li data-menuanchor="page7"><a href="#page7">联系我们</a></li>
+        </ul>
+        <div class="m-btn right">
+        </div>
+        <ul class="m-menu" id="m-menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+            <li data-menuanchor="page2"><a href="#page2">公司介绍</a></li>
+            <li data-menuanchor="page3"><a href="#page3">资金托管</a></li>
+            <li data-menuanchor="page4"><a href="#page4">旗下产品</a></li>
+            <li data-menuanchor="page5"><a href="#page5">安全保障</a></li>
+            <li data-menuanchor="page6"><a href="#page6">合作伙伴</a></li>
+            <li data-menuanchor="page7"><a href="#page7">联系我们</a></li>
+        </ul>
+    </div>
+</header>
+<div id="dowebok">
+    <div class="section section1">
+        <div class="section1-container">
+            <h1 class="section1-container-h1">JIANGNAN BANK</h1>
+            <h2 class="section1-container-h2">江南钱庄</h2>
+            <div class="section1-container-h3">中&nbsp;&nbsp;国&nbsp;&nbsp;人&nbsp;&nbsp;自&nbsp;&nbsp;己&nbsp;&nbsp;的&nbsp;&nbsp;财&nbsp;&nbsp;富&nbsp;&nbsp;管&nbsp;&nbsp;理&nbsp;&nbsp;平&nbsp;&nbsp;台</div>
+            <div class="txt section1-container-h4" >THE CHINESE</div>
+            <div class="section1-container-h5p">
+                <span class="section1-container-h5">OWN WEALTH MANAGEMENT PLATFORM</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="section section2">
+        <div class="modal">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江南钱庄，创设于光绪二年（1876），距今一百四十余年，是属于中国人自己的财富管理平台。现江南钱庄系上海雨海信息科技有限公司旗下的互联网金融平台，注册资金5000万，专注为用户提供多元化的投资选择和优质的投资服务，致力于为投资人提供更安全、更低风险、更稳健的理财产品。
+        </div>
+    </div>
+    <div class="section section3">
+        <div class="section3-container">
+            <div class="section-m-title">资金托管</div>
+            <div class="section3-container-header">
+                <div class="fiv">
+                    不碰投资人一分钱
+                </div>
+                <div class="red left"></div>
+                <div class="biv">让收益高枕无忧</div>
+                <div class="red right"></div>
+            </div>
+            <div class="m-section3-container-header">
+
+            </div>
+            <div class="section3-container-img">
+                <img src="img/page3-2.png" alt=""/>
+            </div>
+            <div class="m-section3-container-img">
+
+            </div>
+        </div>
+    </div>
+    <div class="section section4">
+        <div class="section4-container">
+            <div class="section4-container-header section1-container-h2">江南钱庄产品信息</div>
+            <div class="section4-img">
+                <div>
+                    <img src="img/page4-1.png" alt="马上赚钱"  class="section4-c-img"/>
+                    <div class="modall">
+                        <div class="modall-content">
+                            <div class="modall-content-img">
+                                <img src="img/ewm.png" alt="关注二维码马上赚钱"/>
+                            </div>
+                            <div>关注微信公众号</div>
+                            <span>马上赚钱</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/page4-2.png" alt="" class="section4-c-img"/>
+                    <div class="modall">
+                        <div class="modall-content">
+                            <div class="modall-content-img">
+                                <img src="img/ewm.png" alt="关注二维码马上赚钱"/>
+                            </div>
+                            <div>关注微信公众号</div>
+                            <span>马上赚钱</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/page4-3.png" alt="" class="section4-c-img"/>
+                    <div class="modall">
+                        <div class="modall-content">
+                            <div class="modall-content-img">
+                                <img src="img/ewm.png" alt="关注二维码马上赚钱"/>
+                            </div>
+                            <div>关注微信公众号</div>
+                            <span>马上赚钱</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section4-txt">
+                <span>查看更多</span> <b></b>
+            </div>
+            <div class="modalll">
+                <img src="img/ewm.png" alt="关注二维码马上赚钱"/>
+                <div>关注微信公众号</div>
+                <span>马上赚钱</span>
+            </div>
+        </div>
+
+        <div class="m-section4-container" id="jiade">
+            <div class="m-title">旗下产品</div>
+            <div class="m-modal">
+               <div class="m-modal-content">
+                   <img src="img2/ewm.png" alt="江南钱庄二维码">
+                   <div>关注微信公众号</div>
+                   <div>马上赚钱</div>
+               </div>
+            </div>
+            <div class="slide">
+                <div><img src="img2/cp1.png" alt=""/></div>
+            </div>
+            <div class="slide"><div><img src="img2/cp2.png" alt=""/></div></div>
+            <div class="slide"><div><img src="img2/cp3.png" alt=""/></div></div>
+        </div>
+    </div>
+    <div class="section section5">
+        <div class="section5-img">
+            <div>
+                <img src="img/db.png" alt=""/>
+                <div>第三方担保</div>
+                <div class="section5-img-modal db1">
+                    <div>
+                        <img src="img/db-1.png" alt=""/>
+                    </div>
+                    <span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江南钱庄由专业的第三方担保公司提供借款项目逾期担保，切实保障投资者的资金安全。
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="img/fk.png" alt=""/>
+                <div>风控体系</div>
+                <div class="section5-img-modal fk1">
+                    <div>
+
+                        <img src="img/fk-1.png" alt=""/>
+                    </div>
+                    <span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多重审查，全程监控。只为向您提供优质、安全的项目。
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="img/zj.png" alt=""/>
+                <div>资金托管</div>
+                <div class="section5-img-modal db1">
+                    <div>
+                        <img src="img/zj-1.png" alt=""/>
+                    </div>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“富友”获得中国人民银行颁发的《支付业务许可证》的机构。由其作为第三方机构进行资金托管，独立负责资金调度。
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-section5-img">
+            <div class="m-title">安全保障</div>
+            <div class="slide"><div><img src="img2/fk1.png" alt=""/></div></div>
+            <div class="slide"><div><img src="img2/fk2.png" alt=""/></div></div>
+            <div class="slide"><div><img src="img2/fk3.png" alt=""/></div></div>
+        </div>
+    </div>
+    <div class="section section6">
+        <div class="section6-container">
+            <h1 class="section1-container-h2">合作伙伴</h1>
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/page6-1.png" alt=""/>
+                    </td>
+                    <td>
+                        <img src="img/page6-2.png" alt=""/>
+                    </td>
+                    <td>
+                        <img src="img/page6-3.png" alt=""/>
+                    </td>
+                    <td>
+                        <img src="img/page6-4.png" alt=""/>
+                    </td>
+                </tr>
+                <tr class="tr2">
+
+                    <td>
+
+                    </td>
+                    <td>
+                        <img src="img/page6-6.png" alt=""/>
+                    </td>
+                    <td>
+                        <img src="img/page6-7.png" alt=""/>
+                    </td>
+                    <td>
+                        <img src="img/page6-8.png" alt=""/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="m-section6-container">
+            <div class="section-m-title">合作伙伴</div>
+            <div>
+                <ul class="left">
+                    <li><img src="img2/pg6-1.png" alt=""/></li>
+                    <li><img src="img2/pg6-2.png" alt=""/></li>
+                    <li><img src="img2/pg6-3.png" alt=""/></li>
+                    <li><img src="img2/pg6-4.png" alt=""/></li>
+
+                </ul>
+                <ul class="right">
+                    <li><img src="img2/pg6-5.png" alt=""/></li>
+                    <li><img src="img2/pg6-6.png" alt=""/></li>
+                    <li><img src="img2/pg6-7.png" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section section7">
+        <div class="img1">
+            <div>关注微信公众号</div>
+            <img src="img/page7-2.png" alt="恭喜发财" />
+        </div>
+        <img src="img/page7-1.png" alt="点击关注" class="img2"/>
+        <div class="beian">
+            <span>江南钱庄版权所有 ©2016|沪ICP备 16048031</span>
+        </div>
+    </div>
+</div>
+<footer>
+    <img src="img/more.png" alt=""/>
+</footer>
+</body>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+
+</script>
+<script src="js/index.js"></script>
+
+</html>
